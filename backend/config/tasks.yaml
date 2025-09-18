@@ -1,0 +1,13 @@
+research_ai_trends_task:
+  description: >
+    Research the latest developments and insights about {topic}. Summarize key findings. Also research and elaborate a list of relevant hashtags to include in the LinkedIn article.
+  expected_output: >
+    A structured summary of 3-5 main points about the current state of the topic.
+
+write_linkedin_article_task:
+  description: >
+    Write a professional LinkedIn article about {topic}, using the research provided.
+    The tone should be professional yet approachable, include actionable insights,
+    and end with a question to drive engagement. Use relevant hashtags to drive SEO to the post.
+  expected_output: >
+    A LinkedIn-style article of 3–5 short paragraphs.
