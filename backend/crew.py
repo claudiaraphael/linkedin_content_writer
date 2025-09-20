@@ -15,6 +15,20 @@ researcher = Agent(
     verbose=True,
 )
 
+analyst = Agent(
+    role="Data Analyst",
+    goal ="Analyse data found and provide insights",
+    backstory="Expert Data Analyst, knows all required metrics to measure AI performance and language",
+    tools=['analysis_tool'],
+    memory=True,
+    verbose=True,
+    allow_delegation=True, # para delegar a analise pro racional
+)
+
+Rationalist = Agent(
+
+)
+
 writer = Agent(
     role="LinkedIn AI Content Writer",
     goal="Write engaging LinkedIn-style articles about {topic}",
