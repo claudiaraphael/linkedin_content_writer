@@ -26,7 +26,13 @@ analyst = Agent(
 )
 
 Rationalist = Agent(
-
+    role="Data Rationalizer",
+    goal ="Your role is to understand the analysis of the Data Analyst and explain the rational decisions behind it's analysis' results.",
+    backstory="Expert Mathmatician and Statistician, with a deep understanding of data analysis and interpretation. You have a nack for explaining complex mathmatical processes in a way that any CEO can understand, without omissing any relevant inforamtion for data justification.",
+    tools=['analysis_tool'],
+    memory=True,
+    verbose=True,
+    allow_delegation=True, # para delegar o racional e a analise pro writer
 )
 
 writer = Agent(
