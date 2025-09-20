@@ -18,6 +18,8 @@ class TopicRequest(BaseModel):
     topic: str
 
 @app.post("/generate_article")
-async def generate_article(req: TopicRequest):
-    article = run_article_generation(req.topic)
+async def generate_article(req: TopicRequest): # funcao que recebe o topico e retorna o artigo
+    article = run_article_generation(req.topic) # .req funciona como um dicionario que recebe o topico
+    # Aqui você pode adicionar lógica adicional, como salvar o artigo gerado em um banco de dados
+    
     return {"article": article}
